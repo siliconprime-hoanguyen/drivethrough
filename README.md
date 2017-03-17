@@ -16,5 +16,10 @@
 
 * **get shop list**
 ```javascript
-get /shops?zipCode=12323
+get /shops/list/get?zipCode=12323
+```
+
+* **get default shop**
+```javascript
+get /shops/list/getdefault?defaultFor=USA
 ```
