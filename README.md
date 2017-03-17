@@ -21,5 +21,5 @@ get /shops/list/get?zipCode=12323
 
 * **get default shop**
 ```javascript
-get /shops/list/getdefault?defaultFor=usa&longitude=xxxx&latitdue=xxxx
+get /shops/list/getdefault?defaultFor=USA&longitude=xxxx&latitude=xxxx
 ```
