@@ -12,5 +12,5 @@
 
 * **get shop list**
 ```javascript
-post /shops?uuid=12323
+get /shops?uuid=12323
 ```
