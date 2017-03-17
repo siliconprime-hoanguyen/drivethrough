@@ -1,5 +1,9 @@
 # drivethrough api
 
+## server
+- intial dev: http://dtapi.codehub.io
+
+
 ## protected api must be called with header
 
 ```javascript
