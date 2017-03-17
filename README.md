@@ -19,7 +19,12 @@
 get /shops/list/get?zipCode=12323
 ```
 
-* **get default shop**
+* **get default shop by country**
 ```javascript
-get /shops/list/getdefault?defaultFor=USA&longitude=xxxx&latitude=xxxx
+get /shops/list/getdefault?defaultFor=USA
+```
+
+* **get default shop by location**
+```javascript
+get /shops/list/getdefault?longitude=xxxx&latitude=xxxx
 ```
