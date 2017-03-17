@@ -16,5 +16,5 @@
 
 * **get shop list**
 ```javascript
-get /shops?uuid=12323
+get /shops?zipCode=12323
 ```
