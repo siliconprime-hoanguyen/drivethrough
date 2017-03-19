@@ -39,4 +39,15 @@ get /shops/list/getdefault?longitude=xxxx&latitude=xxxx
 ```javascript
 get /categories/list/get?shopId=1234&skip=0&limit=10
 ```
+## product
+
+* **get product list by shop id**
+```javascript
+get /products/list/get?shopId=1234&skip=0&limit=10
+```
+
+* **get product list by shop id and category ids**
+```javascript
+get /products/list/get?shopId=1234&categoryIds=12,34,56&skip=0&limit=10 //get products from 3 category id 12, 34, 56
+```
 
