@@ -14,9 +14,14 @@
 
 ## shop 
 
-* **get shop list**
+* **get shop list by zip code**
 ```javascript
-get /shops/list/get?zipCode=12323
+get /shops/list/get?zipCode=12323&skip=0&limit=10
+```
+
+* **get shop list by location**
+```javascript
+get /shops/list/get?longitude=xxxx&latitude=xxxx&skip=0&limit=10
 ```
 
 * **get default shop by country**
@@ -28,3 +33,10 @@ get /shops/list/getdefault?defaultFor=USA
 ```javascript
 get /shops/list/getdefault?longitude=xxxx&latitude=xxxx
 ```
+## category
+
+* **get category list by shop id**
+```javascript
+get /categories/list/get?shopId=1234&skip=0&limit=10
+```
+
