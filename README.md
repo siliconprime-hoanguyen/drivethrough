@@ -57,7 +57,7 @@ get /products/:productId
 
 ## order
 
-* **create order**
+* **create order for anonymous user**
 ```javascript
 post /orders
 ```
