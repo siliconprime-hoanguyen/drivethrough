@@ -57,7 +57,26 @@ get /products/:productId
 
 ## order
 
-* **create order for anonymous user**
+* **create order (or initially add product to cart) for anonymous user** **please note that one accountId can only have one active cart for each shop at a moment**
+```javascript
+post /orders
+```
+```javascript
+{
+  accountId: 'testId', //generated random from app and must be unique per installation of the app.
+  shopId:'58d0a754826d4f21b88fefae',
+  details:[{
+  	_id:'58d0a7c6826d4f21b890882a',
+  	quantity: 4
+  },
+  {
+  	_id:'58d0a7c6826d4f21b8908830',
+  	quantity: 4
+  }]
+}
+```
+
+* **adjust quantity for anonymous user**
 ```javascript
 post /orders
 ```
