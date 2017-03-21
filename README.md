@@ -57,7 +57,9 @@ get /products/:productId
 
 ## order
 
-* **create order (or initially add product to cart) for anonymous user** **please note that one accountId can only have one active cart for each shop at a moment**
+* **create order (or initially add products to cart) for anonymous user** 
+
+**please note that one accountId can only have one active cart for each shop at a moment**
 ```javascript
 post /orders
 ```
