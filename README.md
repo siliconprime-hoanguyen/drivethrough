@@ -50,4 +50,8 @@ get /products/list/get?shopId=1234&skip=0&limit=10
 ```javascript
 get /products/list/get?shopId=1234&categoryIds=12,34,56&skip=0&limit=10 //get products from 3 category id 12, 34, 56
 ```
+* **get product by id**
+```javascript
+get /products/:productId
+```
 
