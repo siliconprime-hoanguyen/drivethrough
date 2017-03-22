@@ -3,6 +3,9 @@
 ## server
 - intial dev: http://dtapi.codehub.io
 
+## test
+http://test.codehub.io
+
 
 ## protected api must be called with header
 
