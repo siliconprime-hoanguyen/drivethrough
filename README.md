@@ -171,3 +171,8 @@ post /payments/method/add
   accountId: 'auniqueid'
 }
 ```
+* **get card list by account id**
+```javascript
+get /payments/method/list?accountId=test
+```
+
