@@ -157,3 +157,17 @@ post /orders/adjustQuantity/:orderId
 ```javascript
 get /orders/list/getactivecart?shopId=12312321&accountId=testId
 ```
+
+## payment
+
+
+* **add stripe card token**
+```javascript
+post /payments/method/add
+```
+```javascript
+{
+  tokenId: 'stripetoken',
+  accountId: 'auniqueid'
+}
+```
