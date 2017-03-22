@@ -152,3 +152,8 @@ post /orders/adjustQuantity/:orderId
   quantity: 23
 }
 ```
+
+* **get active cart for account id and shop id**
+```javascript
+get /orders/list/getActiveCart?shopId=12312321&accountId=testId
+```
