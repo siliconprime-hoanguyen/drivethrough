@@ -8,7 +8,68 @@
 
 ```javascript
 {
-	Authorization: Bearer xxxxxxx //xxxxxxx is the token received when calling login api successfully.
+   Authorization: Bearer xxxxxxx //xxxxxxx is the token received when calling login api successfully.
+}
+```
+
+### registration & authentication
+
+* **registration**
+```javascript
+post /accounts
+```
+```javascript
+{
+  "email":"codehubio@gmail.com",
+  "password":"12345678", // must be more than 6
+  "firstName":"hoa",
+  "lastName":"nguyen",
+  "phone": "123123",
+  "countryCode":"+84"
+}
+```
+* **activate**
+```javascript
+post /accounts/activate/tokens
+````
+
+```javascript
+{
+	"token":"12345678"
+}
+```
+* **resend activate email**
+```javascript
+post /accounts/activate/sendemail
+````
+
+```javascript
+{
+	"email":"ancsd@fdsfds.com"
+}
+```
+
+* **resend activate sms**
+```javascript
+post /accounts/activate/sendsms
+````
+
+```javascript
+{
+ "phone":"12345"
+}
+```
+
+* **login**
+
+```javascript
+post /auth/login
+```
+
+```javascript
+{
+  "password":"12345678",
+  "uid":"+8412323232"
 }
 ```
 
