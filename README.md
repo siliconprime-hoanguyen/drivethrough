@@ -163,7 +163,7 @@ get /orders/list/getactivecart?shopId=12312321&accountId=testId
 
 * **add stripe card token**
 ```javascript
-post /payments/method/add
+post /payments/methods/add
 ```
 ```javascript
 {
@@ -173,6 +173,6 @@ post /payments/method/add
 ```
 * **get card list by account id**
 ```javascript
-get /payments/method/list?accountId=test
+get /payments/methods/list?accountId=test
 ```
 
