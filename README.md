@@ -175,7 +175,9 @@ post /payments/methods/add
 ```javascript
 get /payments/methods/list?accountId=test
 ```
-* **get public config for payment service (stripe) **
+
+* **get public config for payment service (stripe)**
+
 ```javascript
 get /payments/methods/config
 ```
