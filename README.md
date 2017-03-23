@@ -158,6 +158,16 @@ post /orders/adjustQuantity/:orderId
 get /orders/list/getactivecart?shopId=12312321&accountId=testId
 ```
 
+* **charge order**
+```javascript
+post /orders/charge/:orderId
+```
+```javascript
+{
+  "cardId":"12321321"
+}
+```
+
 ## payment
 
 
