@@ -168,6 +168,12 @@ post /orders/charge/:orderId
 }
 ```
 
+* **place order**
+```javascript
+post /orders/place/:orderId
+```
+
+
 ## payment
 
 
