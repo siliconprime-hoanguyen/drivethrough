@@ -131,6 +131,7 @@ post /orders
 {
   accountId: 'testId', //generated random from app and must be unique per installation of the app.
   shopId:'58d0a754826d4f21b88fefae',
+  description: 'lorem ipsum',
   details:[{
   	_id:'58d0a7c6826d4f21b890882a',
   	quantity: 4
