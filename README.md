@@ -165,7 +165,8 @@ post /orders/charge/:orderId
 ```
 ```javascript
 {
-  "cardId":"12321321"
+  cardId:"12321321",
+  pickupAt: 2017-01-20T08:35:30.231Z
 }
 ```
 
@@ -173,6 +174,12 @@ post /orders/charge/:orderId
 ```javascript
 post /orders/place/:orderId
 ```
+```javascript
+{
+   pickupAt: 2017-01-20T08:35:30.231Z
+}
+```
+
 
 
 ## payment
