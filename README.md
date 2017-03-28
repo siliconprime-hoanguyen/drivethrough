@@ -119,6 +119,17 @@ get /products/list/get?shopId=1234&categoryIds=12,34,56&skip=0&limit=10 //get pr
 get /products/:productId
 ```
 
+* **add product to favourite list**
+```javascript
+post /products/addtofavourite/:productId
+```
+```javascript
+{
+  accountId: 'testId', //generated random from app and must be unique per installation of the app.  
+}
+```
+
+
 ## order
 
 * **create order (or initially add products to cart) for anonymous user** 
