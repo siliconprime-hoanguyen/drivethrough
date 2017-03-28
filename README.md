@@ -33,7 +33,7 @@ post /accounts
 ```
 * **activate**
 ```javascript
-post /accounts/activate/tokens
+post /accounts/activate/tokens?autoLogin=1 //autoLogin=1 means login token will be returned automatically without calling login api
 ````
 
 ```javascript
