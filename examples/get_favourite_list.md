@@ -1,20 +1,16 @@
 
 ```javascript
-[ { _id: { shopId: '58db1ac8d044366c53bbf05f', shopName: 'new shop 0' },
-    shopId: '58db1ac8d044366c53bbf05f',
-    shopName: 'new shop 0',
+[ { _id: '58db1ac8d044366c53bbf05f',
+    name: 'new shop 0',
     favourites: { count: 20, products: [Object] } },
-  { _id: { shopId: '58db1ac8d044366c53bbf067', shopName: 'new shop 1' },
-    shopId: '58db1ac8d044366c53bbf067',
-    shopName: 'new shop 1',
+  { _id: '58db1ac8d044366c53bbf067',
+    name: 'new shop 1',
     favourites: { count: 20, products: [Object] } },
-  { _id: { shopId: '58db1ac8d044366c53bbf06f', shopName: 'new shop 2' },
-    shopId: '58db1ac8d044366c53bbf06f',
-    shopName: 'new shop 2',
+  { _id: '58db1ac8d044366c53bbf06f',
+    name: 'new shop 2',
     favourites: { count: 20, products: [Object] } },
-  { _id: { shopId: '58db1ac8d044366c53bbf077', shopName: 'new shop 3' },
-    shopId: '58db1ac8d044366c53bbf077',
-    shopName: 'new shop 3',
+  { _id: '58db1ac8d044366c53bbf077',
+    name: 'new shop 3',
     favourites: { count: 20, products: [Object] } } ]
 
 ```
