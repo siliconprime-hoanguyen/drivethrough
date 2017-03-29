@@ -133,7 +133,10 @@ post /products/addtofavourite/:productId
 ```javascript
 get /products/getFavourites/:accountId?skip=0&limit=3&limitProduct=10
 ```
-
+* **get favourite list by account id and shop id**
+```javascript
+get /products/getFavourites/:accountId/:shopId?skip=0&limit=3
+```
 
 
 ## order
