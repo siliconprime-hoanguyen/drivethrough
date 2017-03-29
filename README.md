@@ -128,6 +128,15 @@ post /products/addtofavourite/:productId
   accountId: 'testId', //generated random from app and must be unique per installation of the app.  
 }
 ```
+* **remove product frome favourite list**
+```javascript
+post /products/removefromfavourite/:productId
+```
+```javascript
+{
+  accountId: 'testId', //generated random from app and must be unique per installation of the app.  
+}
+```
 
 * **get favourite list by account id**
 ```javascript
