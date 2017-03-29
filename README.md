@@ -129,6 +129,12 @@ post /products/addtofavourite/:productId
 }
 ```
 
+* **get favourite list by account id**
+```javascript
+get /products/getFavourites/:accountId?skip=0&limit=3&limitProduct=10
+```
+
+
 
 ## order
 
