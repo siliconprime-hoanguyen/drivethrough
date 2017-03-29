@@ -1,5 +1,5 @@
 
-```json
+```javascript
 [ { _id: { shopId: '58db1ac8d044366c53bbf05f', shopName: 'new shop 0' },
     shopId: '58db1ac8d044366c53bbf05f',
     shopName: 'new shop 0',
@@ -22,7 +22,7 @@
 **for *product* object please refers below**
 
 
-```json
+```javascript
 [ { _id: '58db1bdf1bb2286c920a2ebf',
     name: 'test product favourite 19',
     description: 'test product favourite 19',
