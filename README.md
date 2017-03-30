@@ -63,6 +63,20 @@ post /accounts/activate/sendsms
 }
 ```
 
+* **reset password via email or sms**
+```javascript
+post /auth/forgotpassword
+````
+
+```javascript
+{
+  "email":"ancsd@fdsfds.com", //if email provided, send via email
+  "phone":"+8412321321" //if phone provided, send via sms
+}
+```
+
+
+
 * **login**
 
 ```javascript
