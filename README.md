@@ -144,12 +144,12 @@ get /products/getFavourites/:accountId?skip=0&limit=3&limitProduct=10
 ```
 * **get favourite list by account id and shop id**
 ```javascript
-get /products/getFavouritesByShopId/:accountId/:shopId?skip=0&limit=3
+get /products/getfavouritesbyshopid/:accountId/:shopId?skip=0&limit=3
 ```
 
 * **get favourite list by account id and product id**
 ```javascript
-get /products/getFavouriteByProductId/:accountId/:productId
+get /products/getfavouritebyproductid/:accountId/:productId
 ```
 
 
