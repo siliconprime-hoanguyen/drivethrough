@@ -63,7 +63,7 @@ post /accounts/activate/sendsms
 }
 ```
 
-* **reset password via email or sms**
+* **send reset password token via email or sms**
 ```javascript
 post /auth/forgotpassword
 ````
@@ -72,6 +72,19 @@ post /auth/forgotpassword
 {
   "email":"ancsd@fdsfds.com", //if email provided, send via email
   "phone":"+8412321321" //if phone provided, send via sms
+}
+```
+
+
+* **reset password with token**
+```javascript
+post /auth/resetpassword
+````
+
+```javascript
+{
+  "token":"79892047",
+  "newPassword": "1234566"
 }
 ```
 
