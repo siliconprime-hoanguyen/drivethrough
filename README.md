@@ -137,6 +137,11 @@ get /categories/list/get?shopId=1234&skip=0&limit=10
 get /products/search/suggest?term=1232
 ```
 
+* **full text search for product**
+```javascript
+get /products/search/query?term=1232&skip=0&limit=10
+```
+
 * **get product list by shop id**
 ```javascript
 get /products/list/get?shopId=1234&skip=0&limit=10
