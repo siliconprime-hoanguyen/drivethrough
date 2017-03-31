@@ -132,6 +132,11 @@ get /categories/list/get?shopId=1234&skip=0&limit=10
 ```
 ## product
 
+* **term suggestion for searching product**
+```javascript
+get /products/seach/suggest?term=1232
+```
+
 * **get product list by shop id**
 ```javascript
 get /products/list/get?shopId=1234&skip=0&limit=10
