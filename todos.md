@@ -1,6 +1,6 @@
 **Authentication modules**
 
-~~1. Update tests for resetting password via sms.~~
+1. Update tests for resetting password via sms (done)
 
 2. Update tests for activation via sms.
 
