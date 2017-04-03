@@ -28,7 +28,8 @@ post /accounts
   "firstName":"hoa",
   "lastName":"nguyen",
   "phone": "123123",
-  "countryCode":"+84"
+  "countryCode":"+84",
+  "consumerAccountId": "testConsummerAccountId"
 }
 ```
 * **activate**
@@ -140,6 +141,11 @@ get /products/search/suggest?term=1232
 * **full text search for product**
 ```javascript
 get /products/search/query?term=1232&skip=0&limit=10
+```
+
+* **get popular keywords**
+```javascript
+get /products/search/keywords?skip=0&limit=10
 ```
 
 * **get product list by shop id**
