@@ -143,7 +143,7 @@ get /products/search/suggest?term=1232
 get /products/search/query?term=1232&skip=0&limit=10
 ```
 
-* **get popular keywords**
+* **get popular keywords (sort by hit count)**
 ```javascript
 get /products/search/keywords?skip=0&limit=10
 ```
