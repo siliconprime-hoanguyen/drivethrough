@@ -104,6 +104,39 @@ post /auth/login
 }
 ```
 
+* **get account by account id (protected)**
+```javascript
+get /accounts/:accountId 
+```
+* **update account by account id (protected)**
+```javascript
+post /accounts/:accountId 
+```
+```javascript
+{
+  "firstName":"hoa",
+  "lastName":"nguyen",
+  "countryCode":"12",
+  "phone":"4343"
+  "status": "active", // ['active', 'inactive', 'banned']
+  "userStatus": "online", // ['online', 'offline']
+}
+```
+```javascript
+this api is for update general info of account so important fields like email, password, id will be **ignored**. to change those fields, please call other specific apis
+```
+
+* **change password (protected)**
+```javascript
+put /accounts/:accountId/password
+```
+```javascript
+{
+  "currentPassword":"xxxx",
+  "newPassword": "xxxxx"
+}
+```
+
 ## shop 
 
 * **get shop list by zip code**
