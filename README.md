@@ -310,6 +310,18 @@ post /payments/methods/add
   accountId: 'auniqueid'
 }
 ```
+
+* **remove stripe card from account**
+```javascript
+post /payments/methods/remove
+```
+```javascript
+{
+  cardId: 'stripecardid',
+  accountId: 'auniqueid'
+}
+```
+
 * **get card list by account id**
 ```javascript
 get /payments/methods/list?accountId=test
