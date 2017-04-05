@@ -313,7 +313,7 @@ post /payments/methods/add
 
 * **remove stripe card from account**
 ```javascript
-post /payments/methods/remove
+delete /payments/methods/remove
 ```
 ```javascript
 {
