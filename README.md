@@ -119,7 +119,12 @@ post /accounts/:accountId
   "countryCode":"12",
   "phone":"4343"
   "status": "active", // ['active', 'inactive', 'banned']
-  "userStatus": "online", // ['online', 'offline']
+  "userStatus": "online", // ['online', 'offline'],
+  "serviceSettings": 
+  {
+     "pushMode": true, //or false, default true
+     "smsMode": false // or true, default true
+  }
 }
 ```
 ```javascript
