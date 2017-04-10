@@ -141,6 +141,12 @@ put /accounts/:accountId/password
   "newPassword": "xxxxx"
 }
 ```
+* **get link for upload profile picture**
+```javascript
+post /accounts/profile/getsignedasseturl
+````
+
+
 
 ## shop 
 
