@@ -43,7 +43,7 @@ post /accounts/activate/tokens?autoLogin=1 //autoLogin=1 means login token will 
 }
 
 ```
-[example](https://github.com/siliconprime-hoanguyen/drivethrough/blob/master/examples/get_favourite_list.md)
+[example](https://github.com/siliconprime-hoanguyen/drivethrough/blob/master/examples/resgistration-autologin-1.md)
 
 * **resend activate email**
 ```javascript
