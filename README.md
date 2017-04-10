@@ -161,8 +161,9 @@ http://dtapi-uploader.codehub.io/images/edf81ec0-1d11-11e7-9f71-b59ac7bddaa
 ```
 
 * **mark link as uploaded**
+
 ```javascript
-post /asset/markuploaded/58eaf2b00989830044484950
+post /asset/markuploaded/xxxxx
 ````
 
 ## shop 
