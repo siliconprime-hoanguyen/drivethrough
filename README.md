@@ -41,7 +41,10 @@ post /accounts/activate/tokens?autoLogin=1 //autoLogin=1 means login token will 
 {
 	"token":"12345678"
 }
+
 ```
+[example](https://github.com/siliconprime-hoanguyen/drivethrough/blob/master/examples/get_favourite_list.md)
+
 * **resend activate email**
 ```javascript
 post /accounts/activate/sendemail
@@ -243,6 +246,8 @@ post /products/removefromfavourite/:productId
 ```javascript
 get /products/getFavourites/:accountId?skip=0&limit=3&limitProduct=10
 ```
+[example](https://github.com/siliconprime-hoanguyen/drivethrough/blob/master/examples/get_favourite_list.md)
+
 * **get favourite list by account id and shop id**
 ```javascript
 get /products/getfavouritesbyshopid/:accountId/:shopId?skip=0&limit=3
