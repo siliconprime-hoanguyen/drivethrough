@@ -146,7 +146,16 @@ put /accounts/:accountId/password
 post /accounts/profile/getsignedasseturl
 ````
 
+* **sample upload**
+```javascript
+http://dtapi-uploader.codehub.io/images/edf81ec0-1d11-11e7-9f71-b59ac7bddaa
+````
 
+***content-type: multipart/form-data***
+
+```javascript
+  file: 'Attach file content'
+```
 
 ## shop 
 
