@@ -1,5 +1,12 @@
 # drivethrough api
 
+## useful links
+- authentication config: [link](configuration-authentication)
+- main config: [link](configuration-main)
+- shop config: [link](configuration-shop)
+- service config: [link](service-config)
+- setup: [link](setup)
+
 ## server
 - intial dev: http://dtapi.codehub.io
 
@@ -17,10 +24,12 @@ http://test.codehub.io
 
 ### registration & authentication
 
-* **registration**
+* **registration consumer account**
+
 ```javascript
 post /accounts
 ```
+
 ```javascript
 {
   "email":"codehubio@gmail.com",
@@ -30,9 +39,28 @@ post /accounts
   "phone": "123123",
   "countryCode":"+84",
   "consumerAccountId": "testConsummerAccountId"
+  "type": "consumer"
 }
 ```
+
+ * **registration sale account**
+
+```javascript
+post /accounts
+```
+
+```javascript
+{
+  "email":"codehubio@gmail.com",
+  "password":"12345678", // must be more than 6
+  "firstName":"hoa",
+  "lastName":"nguyen",
+  "type": "sale"
+}
+```
+
 * **activate**
+
 ```javascript
 post /accounts/activate/tokens?autoLogin=1 //autoLogin=1 means login token will be returned automatically without calling login api
 ````
@@ -46,6 +74,7 @@ post /accounts/activate/tokens?autoLogin=1 //autoLogin=1 means login token will 
 [example](https://github.com/siliconprime-hoanguyen/drivethrough/blob/master/examples/resgistration-autologin-1.md)
 
 * **resend activate email**
+
 ```javascript
 post /accounts/activate/sendemail
 ````
@@ -57,6 +86,7 @@ post /accounts/activate/sendemail
 ```
 
 * **resend activate sms**
+
 ```javascript
 post /accounts/activate/sendsms
 ````
@@ -68,6 +98,7 @@ post /accounts/activate/sendsms
 ```
 
 * **send reset password token via email or sms**
+
 ```javascript
 post /auth/forgotpassword
 ````
@@ -81,6 +112,7 @@ post /auth/forgotpassword
 
 
 * **reset password with token**
+
 ```javascript
 post /auth/resetpassword
 ````
@@ -108,10 +140,13 @@ post /auth/login
 ```
 
 * **get account by account id (protected)**
+
 ```javascript
 get /accounts/:accountId 
 ```
+
 * **update account by account id (protected)**
+
 ```javascript
 post /accounts/:accountId 
 ```
@@ -130,26 +165,31 @@ post /accounts/:accountId
   }
 }
 ```
+
 ```javascript
 this api is for update general info of account so important fields like email, password, id will be **ignored**. to change those fields, please call other specific apis
 ```
 
 * **change password (protected)**
+
 ```javascript
 put /accounts/:accountId/password
 ```
+
 ```javascript
 {
   "currentPassword":"xxxx",
   "newPassword": "xxxxx"
 }
 ```
+
 * **get link for upload profile picture**
 ```javascript
 post /accounts/profile/getsignedasseturl
 ````
 
 * **sample upload**
+
 ```javascript
 http://dtapi-uploader.codehub.io/images/edf81ec0-1d11-11e7-9f71-b59ac7bddaa
 ````
@@ -234,9 +274,11 @@ post /products/addtofavourite/:productId
 }
 ```
 * **remove product frome favourite list**
+
 ```javascript
 post /products/removefromfavourite/:productId
 ```
+
 ```javascript
 {
   accountId: 'testId', //generated random from app and must be unique per installation of the app.  
@@ -244,17 +286,20 @@ post /products/removefromfavourite/:productId
 ```
 
 * **get favourite list by account id**
+
 ```javascript
 get /products/getFavourites/:accountId?skip=0&limit=3&limitProduct=10
 ```
 [example](https://github.com/siliconprime-hoanguyen/drivethrough/blob/master/examples/get_favourite_list.md)
 
 * **get favourite list by account id and shop id**
+
 ```javascript
 get /products/getfavouritesbyshopid/:accountId/:shopId?skip=0&limit=3
 ```
 
 * **get favourite list by account id and product id**
+
 ```javascript
 get /products/getfavouritebyproductid/:accountId/:productId
 ```
@@ -265,9 +310,11 @@ get /products/getfavouritebyproductid/:accountId/:productId
 * **create order (or initially add products to cart) for anonymous user** 
 
 **please note that one accountId can only have one active cart for each shop at a moment**
+
 ```javascript
 post /orders
 ```
+
 ```javascript
 {
   accountId: 'testId', //generated random from app and must be unique per installation of the app.
@@ -285,9 +332,11 @@ post /orders
 ```
 
 * **adjust quantity for anonymous user**
+
 ```javascript
 post /orders/adjustQuantity/:orderId
 ```
+
 ```javascript
 {
   productId: '12321',
@@ -296,19 +345,23 @@ post /orders/adjustQuantity/:orderId
 ```
 
 * **get active cart for account id and shop id**
+
 ```javascript
 get /orders/list/getactivecart?shopId=12312321&accountId=testId
 ```
 
 * **get upcoming order account id**
+
 ```javascript
 get /orders/list/getupcoming?accountId=testId
 ```
 
 * **charge order**
+
 ```javascript
 post /orders/charge/:orderId
 ```
+
 ```javascript
 {
   cardId:"12321321",
@@ -317,6 +370,7 @@ post /orders/charge/:orderId
 ```
 
 * **place order**
+
 ```javascript
 post /orders/place/:orderId
 ```
@@ -332,9 +386,11 @@ post /orders/place/:orderId
 
 
 * **add stripe card token**
+
 ```javascript
 post /payments/methods/add
 ```
+
 ```javascript
 {
   tokenId: 'stripetoken',
@@ -343,9 +399,11 @@ post /payments/methods/add
 ```
 
 * **remove stripe card from account**
+
 ```javascript
 delete /payments/methods/remove
 ```
+
 ```javascript
 {
   cardId: 'stripecardid',
@@ -354,6 +412,7 @@ delete /payments/methods/remove
 ```
 
 * **get card list by account id**
+
 ```javascript
 get /payments/methods/list?accountId=test
 ```
