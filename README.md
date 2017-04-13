@@ -242,7 +242,7 @@ get /products/search/suggest?term=1232
 
 * **full text search for product**
 ```javascript
-get /products/search/query?term=1232&skip=0&limit=10
+get /products/search/query?term=1232&shopId=xxx&skip=0&limit=10
 ```
 
 * **get popular keywords (sort by hit count)**
