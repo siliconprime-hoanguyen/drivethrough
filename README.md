@@ -361,6 +361,25 @@ get /orders/list/getupcoming?accountId=testId
 ```javascript
 post /orders/charge/:orderId
 ```
+* **refund order**
+
+```javascript
+post /orders/refund/:orderId
+```
+
+```javascript
+{
+
+  details:[{
+  	_id:'58d0a7c6826d4f21b890882a',
+  	quantity: 4 //quantity to refund
+  },
+  {
+  	_id:'58d0a7c6826d4f21b8908830',
+  	quantity: 4 //quantity to refund
+  }]
+}
+```
 
 ```javascript
 {
