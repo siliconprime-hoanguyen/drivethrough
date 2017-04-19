@@ -442,3 +442,22 @@ get /payments/methods/list?accountId=test
 get /payments/methods/config
 ```
 
+## sale
+
+* **get default shop for sale** (protected)
+
+```javascript
+get /sale/shops/list/getdefault
+```
+
+* **assign a manager to shop** (protected)
+
+```javascript
+post /admin/shops/:shopId/addManager
+```
+
+```javascript
+{
+  accountId: 'sale account id'
+}
+```
