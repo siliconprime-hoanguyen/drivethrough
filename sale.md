@@ -45,7 +45,7 @@ post /categories/:categoryId
 
 * **get signed url to upload image to category**
 ```javascript
-post /getSignedAssetUrl/:categoryId
+post /categories/getSignedAssetUrl/:categoryId
 ```
 
 * **assign a manager to shop** (protected)
