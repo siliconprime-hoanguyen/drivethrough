@@ -469,6 +469,19 @@ get /sale/products/:productId
 get /sale/categories/list/get?shopId=1234&skip=0&limit=10
 ```
 
+* **update category**
+```javascript
+post /categories/:categoryId
+```
+```javascript
+{
+  name: 'new category name',
+  description: 'new category description',
+  status: 'active' //or inactive
+}
+```
+
+
 * **assign a manager to shop** (protected)
 
 ```javascript
