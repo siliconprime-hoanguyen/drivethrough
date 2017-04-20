@@ -264,6 +264,12 @@ get /products/list/get?shopId=1234&categoryIds=12,34,56&skip=0&limit=10 //get pr
 get /products/:productId
 ```
 
+* **get category by id**
+```javascript
+get /categories/:categoryId
+```
+
+
 * **add product to favourite list**
 ```javascript
 post /products/addtofavourite/:productId
@@ -462,6 +468,11 @@ get /sale/products/list/get?shopId=1234&categoryIds=12,34,56&skip=0&limit=10 //g
 * **get product by id**
 ```javascript
 get /sale/products/:productId
+```
+
+* **get category by id**
+```javascript
+get /sale/categories/:categoryId
 ```
 
 * **get category list by shop id**
