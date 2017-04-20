@@ -1,5 +1,25 @@
 ## sale
 
+* **refund order**
+
+```javascript
+post /orders/refund/:orderId
+```
+
+```javascript
+{
+
+  details:[{
+  	_id:'58d0a7c6826d4f21b890882a',
+  	quantity: 4 //quantity to refund
+  },
+  {
+  	_id:'58d0a7c6826d4f21b8908830',
+  	quantity: 4 //quantity to refund
+  }]
+}
+```
+
 * **get default shop for sale** (protected)
 
 ```javascript
