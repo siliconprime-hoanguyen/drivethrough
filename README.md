@@ -14,7 +14,10 @@
 http://test.codehub.io
 
 
-sale documentation: https://github.com/siliconprime-hoanguyen/drivethrough/blob/master/sale.md
+## sale documentation: 
+
+https://github.com/siliconprime-hoanguyen/drivethrough/blob/master/sale.md
+
 
 ## protected api must be called with header
 
