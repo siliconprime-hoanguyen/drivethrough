@@ -450,6 +450,25 @@ get /payments/methods/config
 get /sale/shops/list/getdefault
 ```
 
+* **get product list by shop id**
+```javascript
+get /sale/products/list/get?shopId=1234&skip=0&limit=10
+```
+
+* **get product list by shop id and category ids**
+```javascript
+get /sale/products/list/get?shopId=1234&categoryIds=12,34,56&skip=0&limit=10 //get products from 3 category id 12, 34, 56
+```
+* **get product by id**
+```javascript
+get /sale/products/:productId
+```
+
+* **get category list by shop id**
+```javascript
+get /sale/categories/list/get?shopId=1234&skip=0&limit=10
+```
+
 * **assign a manager to shop** (protected)
 
 ```javascript
