@@ -83,5 +83,5 @@ post /admin/shops/:shopId/addManager
  **get upcoming order by shop id**
 
 ```javascript
-get /orders/list/getupcoming/:shopId
+get sale/orders/list/getupcoming/:shopId
 ```
