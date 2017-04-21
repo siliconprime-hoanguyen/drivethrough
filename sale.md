@@ -79,3 +79,9 @@ post /admin/shops/:shopId/addManager
   accountId: 'sale account id'
 }
 ```
+## order
+ **get upcoming order by shop id**
+
+```javascript
+get /orders/list/getupcoming/:shopId
+```
