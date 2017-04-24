@@ -85,3 +85,9 @@ post /admin/shops/:shopId/addManager
 ```javascript
 get sale/orders/list/getupcoming/:shopId
 ```
+
+**get past orders by shop id**
+
+```javascript
+get sale/orders/list/getpast/:shopId
+```
