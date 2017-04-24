@@ -156,6 +156,12 @@ get /orders/list/getactivecart?shopId=12312321&accountId=testId
 get /orders/list/getupcoming?accountId=testId
 ```
 
+* **get past order account id**
+
+```javascript
+get /orders/list/getpast?accountId=testId
+```
+
 * **charge order**
 
 ```javascript
