@@ -33,7 +33,7 @@ get /sale/products/list/get?shopId=1234&skip=0&limit=10
 
 * **create product**
 ```javascript
-get /sale/products/list/get?shopId=1234&skip=0&limit=10
+post /products
 ```
 
 ```javascript
