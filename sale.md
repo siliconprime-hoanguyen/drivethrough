@@ -122,13 +122,13 @@ post /admin/shops/:shopId/addManager
  **get upcoming order by shop id**
 
 ```javascript
-get sale/orders/list/getupcoming/:shopId
+get sale/orders/list/getupcoming/:shopId?skip=0&limit=10
 ```
 
 **get past orders by shop id**
 
 ```javascript
-get sale/orders/list/getpast/:shopId
+get sale/orders/list/getpast/:shopId?skip=0&limit=10
 ```
 
 **mark order as ready**
