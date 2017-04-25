@@ -111,3 +111,15 @@ get sale/orders/list/getupcoming/:shopId
 ```javascript
 get sale/orders/list/getpast/:shopId
 ```
+
+**mark order as ready**
+
+```javascript
+post sale/orders/markready/:orderId
+```
+
+**mark order as done**
+
+```javascript
+post sale/orders/markdone/:orderId
+```
