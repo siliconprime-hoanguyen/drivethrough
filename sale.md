@@ -53,7 +53,7 @@ post /products
 
 * **get signed url to upload images to products**
 ```javascript
-post /producs/getSignedAssetUrl/:productId
+post /products/getSignedAssetUrl/:productId
 ```
 
 ```javascript
