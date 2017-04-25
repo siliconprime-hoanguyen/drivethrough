@@ -51,6 +51,17 @@ post /products
 }
 ```
 
+* **get signed url to upload images to products**
+```javascript
+post /producs/getSignedAssetUrl/:productId
+```
+
+```javascript
+{
+  number: 3 //how many links will be created.
+}
+```
+
 * **update product**
 ```javascript
 post /products/:productId
