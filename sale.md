@@ -51,6 +51,25 @@ post /products
 }
 ```
 
+* **update product**
+```javascript
+post /products/:productId
+```
+
+```javascript
+{
+    "name": "test product name 1",
+    "description": "test product name 1",
+    "originalPrice": 10,
+    "currentPrice": 5,
+    "categoryIds": "58cf4b6d8433d1c962522ee6,58cf4b6d8433d1c962522eda",
+    "sku":"12321",
+    "shelfNumber": "23",
+    "lineNumber":"33",
+    "published": true 
+}
+```
+
 * **get product list by shop id and category ids**
 ```javascript
 get /sale/products/list/get?shopId=1234&categoryIds=12,34,56&skip=0&limit=10 //get products from 3 category id 12, 34, 56
