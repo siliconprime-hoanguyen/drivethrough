@@ -1,3 +1,19 @@
+##  shop
+* **create shop**
+```javascript
+post /shops
+```
+
+```javascript
+{
+    "name": "test shop name 1",
+    "address": "test shop name 1",
+    "longitude": -94.420307,
+    "latitude": 44.968046,
+    "zipCode": "21345"
+}
+```
+
 ## sale
 
 * **refund order**
