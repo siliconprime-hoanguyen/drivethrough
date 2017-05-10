@@ -98,6 +98,19 @@ get /products/getFavourites/:accountId?skip=0&limit=3&limitProduct=10
 get /products/getfavouritesbyshopid/:accountId/:shopId?skip=0&limit=3
 ```
 
+* **get purchased products list by account id**
+
+```javascript
+get /products/getpurchased/:accountId?skip=0&limit=3&limitProduct=10
+```
+
+
+* **get purchased products list by account id and shop id**
+
+```javascript
+get /products/getpurchasedbyshopid/:accountId/:shopId?skip=0&limit=3
+```
+
 * **get favourite list by account id and product id**
 
 ```javascript
